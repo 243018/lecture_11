@@ -50,7 +50,7 @@ def recursive_binary_search(numbers, value, left, right):
     elif numbers[middle_idx] < value:
         return recursive_binary_search(numbers, value, middle_idx + 1, right)
     elif numbers[middle_idx] > value:
-        return recursive_binary_search(numbers, value, left, middle_idx)
+        return recursive_binary_search(numbers, value, left, middle_idx - 1)
     else:
         return middle_idx
 
